@@ -1,5 +1,5 @@
-import Navbar from "@/components/ui/Navbar";
-import SideBar from "@/components/ui/SideBar";
+import Navbar from "@/components/Navbar";
+import SideBar from "@/components/SideBar";
 import React, { ReactNode } from "react";
 
 export default function HomeLayout({ children }: { children: ReactNode }) {
