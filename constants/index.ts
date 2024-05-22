@@ -25,3 +25,26 @@ export const sidebarLinks = [
     imgUrl: "./icons/add-personal.svg",
   },
 ];
+
+export const layoutTemplate = [
+  {
+    label: "grade",
+    format: "grid",
+  },
+  {
+    label: "palestrante à esquerda",
+    format: "speaker-left",
+  },
+  {
+    label: "palestrante à direita",
+    format: "speaker-right",
+  },
+];
+
+export const avatarImages = [
+  "/images/avatar-1.jpeg",
+  "/images/avatar-2.jpeg",
+  "/images/avatar-3.png",
+  "/images/avatar-4.png",
+  "/images/avatar-5.png",
+];
