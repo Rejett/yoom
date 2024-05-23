@@ -9,6 +9,7 @@ import { useToast } from "./ui/use-toast";
 import { Textarea } from "./ui/textarea";
 import { pt } from "date-fns/locale/pt";
 import ReactDatePicker, { registerLocale } from "react-datepicker";
+import { Input } from "./ui/input";
 
 enum MeetingState {
   Schedule = "isScheduleMeeting",
@@ -159,6 +160,22 @@ export default function MeetingTypeList() {
           }}
         />
       )}
+
+      <MeetingModal
+        isOpen={meetingState === MeetingState.Joining}
+        onClose={() => setMeetingState(undefined)}
+        title="Type the link here"
+        className="text-center"
+        buttonText="Join Meeting"
+        handleClick={() => router.push(values.link)}
+      >
+        <Input
+          placeholder="Meeting link"
+          onChange={(e) => setValues({ ...values, link: e.target.value })}
+          className="border-none bg-dark-3 focus-visible:ring-0 focus-visible:ring-offset-0"
+        />
+      </MeetingModal>
+
       <MeetingModal
         title="Inicie uma nova Chamada"
         className="text-center"
