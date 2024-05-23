@@ -1,4 +1,4 @@
-![Banner do Projeto]('./yoom-banner.png')
+![Banner do Projeto](./yoom-banner.png)
 # Introdução
 Este projeto, construído com as versões mais recentes do Next.js e TypeScript, replica o Zoom, uma ferramenta amplamente utilizada para videoconferências. Ele permite que os usuários façam login com segurança, criem reuniões e acessem várias funcionalidades como gravação, compartilhamento de tela e gerenciamento de participantes.
 
